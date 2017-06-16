@@ -13,3 +13,4 @@ timings. This may lead to bit errors when having heavy data traffic in high baud
 - 2017/06/17 - rearranged repo Platformio layout
 - 2017/06/17 - Add 2 stop bits support.
 - 2016/12/11 - Add parity bit support. (credits go to https://github.com/PerryWu/espsoftwareserial)
+- 2015-09-22 - Original (https://github.com/plerup/espsoftwareserial)
