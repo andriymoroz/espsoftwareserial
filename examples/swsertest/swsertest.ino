@@ -1,11 +1,19 @@
+/*
 
+Example for ESP8266, tested against Wemis D1 mini
+
+*/
+
+#include <Arduino.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial swSer(14, 12, false, 256);
+SoftwareSerial swSer(D5, D6, false, 256);
 
 void setup() {
-  Serial.begin(115200);
-  swSer.begin(115200);
+  Serial.begin(4800);
+  swSer.begin(4800);
+  swSer.setParity(PARITY_MODE_EVEN);
+  swSer.setStopBits(STOP_BITS_TWO);
 
   Serial.println("\nSoftware serial test started");
 
